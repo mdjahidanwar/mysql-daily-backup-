@@ -6,4 +6,4 @@ I have declared some variables in the script to make it easy to reuse the script
 
 I have use date on the name so that it will easier to find a backup file of specific date.
 
-We automate the task and schedule it daily we can use cronjob. it is a free tool for task scheduling in linux.
+We can automate the task and schedule it daily we can use cronjob. it is a free tool for task scheduling in linux.
