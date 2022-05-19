@@ -1,0 +1,11 @@
+
+#!/bin/bash 
+FILE=backup.sql.`date + "%y%m%d"
+DBSERVER= SERVER_IP #GIVE YOUR MYSQL SERVER IP HERE. iF IT IS INSTALLED IN LOCALHOST USE 127.0.0.1
+DATABASE= DATABASE_NAME
+USER= DB_USER_NAME
+PASSWORD= DBUSER_PASSWORD
+
+mysqldump --opt --user=${USER} --password=${PASSWORD} {DATABASE} > ${FILE}
+gzip $FILE
+echo "${FILE}.gz was created"
